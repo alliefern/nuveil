@@ -696,13 +696,20 @@ p.light { color: var(--cream-mid); }
    ANIMATIONS
    ========================================= */
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(24px);
+/* Visible by default — JS enhances with animation */
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.75s ease, transform 0.75s ease;
 }
 
-.fade-in.visible {
+/* JS adds .js-ready to body, then hides reveal elements until observed */
+.js-ready .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.js-ready .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
