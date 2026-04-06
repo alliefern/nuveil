@@ -169,12 +169,10 @@ a {
   border-bottom: 1px solid var(--border);
 }
 
-.nav-logo {
-  font-family: var(--serif);
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: var(--ink);
-  letter-spacing: 0.04em;
+.nav-logo img {
+  height: 22px;
+  width: auto;
+  display: block;
 }
 
 .nav-cta {
@@ -206,6 +204,14 @@ a {
 
 .hero-inner {
   max-width: 780px;
+}
+
+.hero-mark {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin-bottom: 2.5rem;
+  opacity: 0.85;
 }
 
 .hero-inner .eyebrow {
@@ -576,10 +582,10 @@ a {
 }
 
 .footer-logo {
-  font-family: var(--serif);
-  font-size: 1.5rem;
-  color: var(--parchment);
-  font-weight: 400;
+  height: 80px;
+  width: auto;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .footer-tagline {
