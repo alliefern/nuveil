@@ -555,6 +555,43 @@ a {
   background: var(--parchment);
 }
 
+.kit-form {
+  margin-top: 2.5rem;
+  max-width: 480px;
+}
+
+/* Override Kit default styles to match Nuveil */
+.kit-form .formkit-form {
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.kit-form .formkit-input {
+  background: transparent !important;
+  border: 1px solid rgba(245, 241, 235, 0.2) !important;
+  color: var(--parchment) !important;
+  font-family: var(--sans) !important;
+  font-weight: 300 !important;
+  border-radius: 0 !important;
+}
+
+.kit-form .formkit-submit {
+  background: var(--gold) !important;
+  color: var(--ink) !important;
+  font-family: var(--sans) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.kit-form .formkit-submit:hover {
+  background: var(--parchment) !important;
+}
+
 .waitlist-note {
   font-size: 0.75rem;
   letter-spacing: 0.12em;
